@@ -1,0 +1,75 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+html, body{
+  width: 100%;;
+  height: 100%;
+}
+img{
+  width:100%;
+  display: block;
+}
+
+/* nav */
+.nav-top, .nav-bottom{
+  position: fixed;
+  left:0;
+  width:100%;
+  background-color: rgba(0,0,0,.8);
+  height:47px;
+}
+.nav-top{
+  top: 0;
+}
+.nav-bottom{
+  bottom: 0;
+}
+.nav-top span,
+.nav-top h1,
+.nav-bottom span{
+  color: #eee;
+  line-height: 47px;
+  cursor: pointer;
+}
+.nav-top > span.to-list,
+.nav-bottom > span.prev{
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+.nav-top > h1.title{
+  text-align: center;
+}
+.nav-top > span.open-menu,
+.nav-bottom > span.next{
+  position: absolute;
+  top:0;
+  right: 10px;
+}
+.nav-bottom > span.to-the-top{
+  width:100%;
+  text-align: center;
+  display: block;
+}
+
+/* nav menu */
+.nav-top ul{
+    display: none;
+}
+.nav-top ul li{
+    background-color: rgba(0,0,0,.8);
+    list-style: none;
+    padding: 5px 20px;
+    text-align: center;
+}
+.nav-top ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #eee;
+    display:block;
+}
+.nav-top ul li:hover{
+    background: rgba(100,100,100,0.8);
+}
